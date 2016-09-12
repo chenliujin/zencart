@@ -7,6 +7,7 @@ delete from configuration where configuration_key = 'PRODUCT_INFO_PREVIOUS_NEXT'
 delete from configuration where configuration_key = 'SHIPPING_BOX_WEIGHT';
 delete from configuration where configuration_key = 'SHIPPING_BOX_PADDING';
 delete from configuration where configuration_key = 'SHIPPING_MAX_WEIGHT';
+delete from configuration where configuration_key = 'SHOW_SHOPPING_CART_DELETE';
 
 
 delete from layout_boxes where layout_box_name = 'banner_box.php';
