@@ -37,4 +37,3 @@ delete from layout_boxes where layout_box_name = 'more_information.php';
 delete from product_type_layout where configuration_key='SHOW_PRODUCT_INFO_ADDITIONAL_IMAGES';
 
 
-  SHOW_FOOTER_IP
