@@ -1,3 +1,9 @@
+/* 可以删除的配置 */
+delete from configuration where configuration_key = 'DEFINE_MAIN_PAGE_STATUS';
+delete from configuration where configuration_key = 'SHOW_CUSTOMER_GREETING';
+
+
+/**/
 delete from configuration where configuration_key = 'SHOW_BANNERS_GROUP_SET7';
 delete from configuration where configuration_key = 'SHOW_BANNERS_GROUP_SET8';
 delete from configuration where configuration_key = 'SHOW_BANNERS_GROUP_SET_ALL';
@@ -8,6 +14,19 @@ delete from configuration where configuration_key = 'SHIPPING_BOX_WEIGHT';
 delete from configuration where configuration_key = 'SHIPPING_BOX_PADDING';
 delete from configuration where configuration_key = 'SHIPPING_MAX_WEIGHT';
 delete from configuration where configuration_key = 'SHOW_SHOPPING_CART_DELETE';
+delete from configuration where configuration_key = 'SHOW_SHOPPING_CART_UPDATE';
+
+
+/* Categories */
+delete from configuration where configuration_key = 'CATEGORIES_SEPARATOR';
+delete from configuration where configuration_key = 'CATEGORIES_SUBCATEGORIES_INDENT';
+delete from configuration where configuration_key = 'CATEGORIES_COUNT_PREFIX';
+delete from configuration where configuration_key = 'CATEGORIES_COUNT_SUFFIX';
+delete from configuration where configuration_key = 'CATEGORIES_COUNT_ZERO';
+delete from configuration where configuration_key = 'SHOW_CATEGORIES_SUBCATEGORIES_ALWAYS';
+delete from configuration where configuration_key = 'SHOW_COUNTS';
+delete from configuration where configuration_key = 'SHOW_CATEGORIES_BOX_PRODUCTS_ALL';
+delete from configuration where configuration_key = 'SHOW_CATEGORIES_SEPARATOR_LINK';
 
 
 delete from layout_boxes where layout_box_name = 'banner_box.php';
