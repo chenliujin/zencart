@@ -1,7 +1,7 @@
 /* 可以删除的配置 */
 delete from configuration where configuration_key = 'DEFINE_MAIN_PAGE_STATUS';
 delete from configuration where configuration_key = 'SHOW_CUSTOMER_GREETING';
-
+delete from configuration where configuration_key = 'BREAD_CRUMBS_SEPARATOR';
 
 /**/
 delete from configuration where configuration_key = 'SHOW_BANNERS_GROUP_SET7';
