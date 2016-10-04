@@ -64,6 +64,13 @@ $shipping_weight = $shipping_weight + ($shipping_weight*($zc_large_percent/100))
 >
 > Default: Yes
 
+## All Listing (configuration_group_id = 23): main_page=products_all
+* PRODUCT_ALL_LISTING_MULTIPLE_ADD_TO_CART
+> Display Multiple Products Qty Box Status and Set Button Location
+>
+> Default: 3 (Both)
+> 改为 0 (off)
+
 ## Define Page Status (configuration_group_id = 25)
 * DEFINE_MAIN_PAGE_STATUS
 > Define Main Page Status
