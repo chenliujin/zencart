@@ -3,6 +3,9 @@ delete from configuration where configuration_key = 'DEFINE_MAIN_PAGE_STATUS';
 delete from configuration where configuration_key = 'SHOW_CUSTOMER_GREETING';
 delete from configuration where configuration_key = 'BREAD_CRUMBS_SEPARATOR';
 
+/* main_page=products_all */
+delete from configuration where configuration_key = 'PRODUCT_ALL_LISTING_MULTIPLE_ADD_TO_CART';
+
 /**/
 delete from configuration where configuration_key = 'SHOW_BANNERS_GROUP_SET7';
 delete from configuration where configuration_key = 'SHOW_BANNERS_GROUP_SET8';
