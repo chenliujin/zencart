@@ -1,3 +1,6 @@
+* SHOW_FOOTER_IP
+
+
 * SHIPPING_BOX_WEIGHT: 格式（$zc_tare_percent:$zc_tare_weight），默认 0:3
 ```
 $shipping_weight = $shipping_weight + ($shipping_weight*($zc_tare_percent/100)) + $zc_tare_weight;
@@ -18,6 +21,25 @@ $shipping_weight = $shipping_weight + ($shipping_weight*($zc_large_percent/100))
 >
 >Default: true
 
+
+## Product Listing (configuration_group_id = 8)
+* PRODUCT_LISTING_MULTIPLE_ADD_TO_CART
+> Default: 3
+>
+> 不需要，修改为 0
+
+* PRODUCT_LIST_PRICE_BUY_NOW
+> Default: 1
+>
+> 不需要，修改为 0
+
+* PREV_NEXT_BAR_LOCATION
+> 分页菜单位置
+> 1 top
+> 2 bottom
+> 3 both (default)
+>
+> 修改为 2
 
 ## Layout Settings (configuration_group_id = 19)
 * SHOW_CATEGORIES_SUBCATEGORIES_ALWAYS
@@ -70,6 +92,35 @@ $shipping_weight = $shipping_weight + ($shipping_weight*($zc_large_percent/100))
 >
 > Default: 3 (Both)
 > 删除
+
+## 首页配置 main_page=index (configuration_group_id = 24)
+* SHOW_PRODUCT_INFO_MAIN_NEW_PRODUCTS
+> Show New Products on Main Page
+>
+> Default: 1
+>
+> 模块已移走，删除此配置
+
+* SHOW_PRODUCT_INFO_MAIN_FEATURED_PRODUCTS
+> Show Featured Products on Main Page
+>
+> Default: 2
+>
+> 模块已移走，删除此配置
+
+* SHOW_PRODUCT_INFO_MAIN_SPECIALS_PRODUCTS
+> Show Special Products on Main Page
+>
+> Default: 3
+>
+> 模块已移走，删除此配置
+
+* SHOW_PRODUCT_INFO_MAIN_UPCOMING
+> Show Upcoming Products on Main Page
+>
+> Default: 4
+>
+> 模块已移走，删除此配置
 
 ## Define Page Status (configuration_group_id = 25)
 * DEFINE_MAIN_PAGE_STATUS

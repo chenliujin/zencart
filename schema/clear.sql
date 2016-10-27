@@ -10,7 +10,6 @@ delete from configuration where configuration_key = 'PRODUCT_ALL_LISTING_MULTIPL
 delete from configuration where configuration_key = 'SHOW_BANNERS_GROUP_SET7';
 delete from configuration where configuration_key = 'SHOW_BANNERS_GROUP_SET8';
 delete from configuration where configuration_key = 'SHOW_BANNERS_GROUP_SET_ALL';
-delete from configuration where configuration_key = 'SHOW_FOOTER_IP';
 delete from configuration where configuration_key = 'PRODUCT_INFO_CATEGORIES';
 delete from configuration where configuration_key = 'PRODUCT_INFO_PREVIOUS_NEXT';
 delete from configuration where configuration_key = 'SHIPPING_BOX_WEIGHT';
@@ -47,12 +46,8 @@ delete from layout_boxes where layout_box_name = 'best_sellers.php';
 delete from layout_boxes where layout_box_name = 'specials.php';
 delete from layout_boxes where layout_box_name = 'product_notifications.php';
 delete from layout_boxes where layout_box_name = 'document_categories.php';
-delete from layout_boxes where layout_box_name = 'whats_new.php';
 delete from layout_boxes where layout_box_name = 'manufacturers.php';
-delete from layout_boxes where layout_box_name = 'reviews.php';
 delete from layout_boxes where layout_box_name = 'featured.php';
-delete from layout_boxes where layout_box_name = 'information.php';
-delete from layout_boxes where layout_box_name = 'more_information.php';
 
 
 
