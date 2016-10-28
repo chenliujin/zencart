@@ -41,6 +41,31 @@ $shipping_weight = $shipping_weight + ($shipping_weight*($zc_large_percent/100))
 >
 > 修改为 2
 
+* PRODUCT_LIST_ALPHA_SORTER
+> 匹配 A-Z 0-9 开头的产品
+> true (default)
+>
+> 不需要此功能，删除
+
+* PRODUCT_LIST_MODEL
+> 0 (default)
+>
+> 不显示，删除
+
+* PRODUCT_LIST_MANUFACTURER
+> 0 (default)
+>
+> 不显示，删除
+
+* PRODUCT_LIST_WEIGHT
+> 0 (default)
+>
+> 不显示，删除
+
+* PRODUCT_LISTING_DEFAULT_SORT_ORDER
+> '' (default)
+
+
 ## Layout Settings (configuration_group_id = 19)
 * SHOW_CATEGORIES_SUBCATEGORIES_ALWAYS
 >分类菜单是否显示子分类，默认显示 value=1
@@ -86,6 +111,11 @@ $shipping_weight = $shipping_weight + ($shipping_weight*($zc_large_percent/100))
 >
 > Default: Yes
 
+* SKIP_SINGLE_PRODUCT_CATEGORIES
+> True (default)
+>
+> 删除
+
 ## All Listing (configuration_group_id = 23): main_page=products_all
 * PRODUCT_ALL_LISTING_MULTIPLE_ADD_TO_CART
 > Display Multiple Products Qty Box Status and Set Button Location
@@ -121,6 +151,87 @@ $shipping_weight = $shipping_weight + ($shipping_weight*($zc_large_percent/100))
 > Default: 4
 >
 > 模块已移走，删除此配置
+
+* SHOW_PRODUCT_INFO_MISSING_NEW_PRODUCTS
+> Show New Products on Main Page - Errors and Missing Products Page
+>
+> 1 (default)
+>
+> 移除或隐藏此模块，删除此配置
+>
+```
+mysql > delete from configuration where configuration_key = 'SHOW_PRODUCT_INFO_MISSING_NEW_PRODUCTS';
+```
+
+* SHOW_PRODUCT_INFO_MISSING_FEATURED_PRODUCTS
+> Show Featured Products on Main Page - Errors and Missing Products Page
+>
+> 2 (default)
+>
+> 移除或隐藏此模块，删除此配置
+```
+mysql >　delete from configuration where configuration_key = 'SHOW_PRODUCT_INFO_MISSING_FEATURED_PRODUCTS';
+```
+
+* SHOW_PRODUCT_INFO_MISSING_SPECIALS_PRODUCTS
+> Show Special Products on Main Page - Errors and Missing Products Page
+>
+> 3 (default)
+>
+> 移除或隐藏此模块，删除此配置
+```
+mysql >　delete from configuration where configuration_key = 'SHOW_PRODUCT_INFO_MISSING_SPECIALS_PRODUCTS';
+```
+
+* SHOW_PRODUCT_INFO_MISSING_UPCOMING
+> Show Upcoming Products on Main Page - Errors and Missing Products Page
+>
+> 4 (default)
+>
+> 移除或隐藏此模块，删除此配置
+```
+mysql > delete from configuration where configuration_key = 'SHOW_PRODUCT_INFO_MISSING_UPCOMING';
+```
+
+* SHOW_PRODUCT_INFO_LISTING_BELOW_NEW_PRODUCTS
+> Show New Products - below Product Listing
+>
+> 1 (default)
+>
+> 移除或隐藏此模块，删除此配置
+```
+mysql > delete from configuration where configuration_key = 'SHOW_PRODUCT_INFO_LISTING_BELOW_NEW_PRODUCTS';
+```
+
+* SHOW_PRODUCT_INFO_LISTING_BELOW_FEATURED_PRODUCTS
+> Show Featured Products - below Product Listing
+>
+> 2 (default)
+>
+> 移除或隐藏此模块，删除此配置
+```
+mysql > delete from configuration where configuration_key = 'SHOW_PRODUCT_INFO_LISTING_BELOW_FEATURED_PRODUCTS';
+```
+
+* SHOW_PRODUCT_INFO_LISTING_BELOW_SPECIALS_PRODUCTS
+> Show Special Products - below Product Listing
+>
+> 3 (default)
+>
+> 移除或隐藏此模块，删除此配置
+```
+mysql > delete from configuration where configuration_key = 'SHOW_PRODUCT_INFO_LISTING_BELOW_SPECIALS_PRODUCTS';
+```
+
+* SHOW_PRODUCT_INFO_LISTING_BELOW_UPCOMING
+> Show Upcoming Products - below Product Listing
+>
+> 4 (default)
+>
+> 移除或隐藏此模块，删除此配置
+```
+mysql > delete from configuration where configuration_key = 'SHOW_PRODUCT_INFO_LISTING_BELOW_UPCOMING';
+```
 
 ## Define Page Status (configuration_group_id = 25)
 * DEFINE_MAIN_PAGE_STATUS
