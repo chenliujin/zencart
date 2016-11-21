@@ -22,6 +22,15 @@ $shipping_weight = $shipping_weight + ($shipping_weight*($zc_large_percent/100))
 >Default: true
 
 
+## Shipping/Packaging (configuration_group_id = 7)
+* SHOW_SHIPPING_ESTIMATOR_BUTTON
+> Shipping Estimator Display Settings for Shopping Cart
+>
+> 1 (Default)
+```
+mysql > delete from configuration where configuration_key = 'SHOW_SHIPPING_ESTIMATOR_BUTTON';
+```
+
 ## Product Listing (configuration_group_id = 8)
 * PRODUCT_LISTING_MULTIPLE_ADD_TO_CART
 > Default: 3
@@ -65,6 +74,51 @@ $shipping_weight = $shipping_weight + ($shipping_weight*($zc_large_percent/100))
 * PRODUCT_LISTING_DEFAULT_SORT_ORDER
 > '' (default)
 
+## stock (configuration_group_id = 9)
+* SHOW_SHOPPING_CART_EMPTY_NEW_PRODUCTS
+> Show New Products on empty Shopping Cart Page
+>
+> 1 (default)
+```
+mysql > delete from configuration where configuration_key = 'SHOW_SHOPPING_CART_EMPTY_NEW_PRODUCTS';
+```
+
+* SHOW_SHOPPING_CART_EMPTY_FEATURED_PRODUCTS
+> Show Featured Products on empty Shopping Cart Page
+>
+> 2 (default)
+```
+mysql > delete from configuration where configuration_key = 'SHOW_SHOPPING_CART_EMPTY_FEATURED_PRODUCTS';
+```
+
+* SHOW_SHOPPING_CART_EMPTY_SPECIALS_PRODUCTS
+> Show Special Products on empty Shopping Cart Page
+>
+> 3 (default)
+```
+mysql > delete from configuration where configuration_key = 'SHOW_SHOPPING_CART_EMPTY_SPECIALS_PRODUCTS';
+```
+
+* SHOW_SHOPPING_CART_EMPTY_UPCOMING
+> Show Upcoming Products on empty Shopping Cart Page
+>
+> 4 (default)
+```
+mysql > delete from configuration where configuration_key = 'SHOW_SHOPPING_CART_EMPTY_UPCOMING';
+```
+
+## product_info (configuration_group_id = 18)
+* META_TAG_INCLUDE_PRICE
+> Meta Tags - Include Product Price in Title
+>
+> 0
+>
+> 1 (default)
+>
+> 不显示，删除
+```
+mysql > delete from configuration where configuration_key = 'META_TAG_INCLUDE_PRICE';
+```
 
 ## Layout Settings (configuration_group_id = 19)
 * SHOW_CATEGORIES_SUBCATEGORIES_ALWAYS
@@ -231,6 +285,38 @@ mysql > delete from configuration where configuration_key = 'SHOW_PRODUCT_INFO_L
 > 移除或隐藏此模块，删除此配置
 ```
 mysql > delete from configuration where configuration_key = 'SHOW_PRODUCT_INFO_LISTING_BELOW_UPCOMING';
+```
+
+* SHOW_PRODUCT_INFO_CATEGORY_NEW_PRODUCTS
+> Show New Products on Main Page - Category with SubCategories
+>
+> 1 (default)
+```
+mysql > delete from configuration where configuration_key = 'SHOW_PRODUCT_INFO_CATEGORY_NEW_PRODUCTS';
+```
+
+* SHOW_PRODUCT_INFO_CATEGORY_FEATURED_PRODUCTS
+> Show Featured Products on Main Page - Category with SubCategories
+>
+> 2 (default)
+```
+mysql > delete from configuration where configuration_key = 'SHOW_PRODUCT_INFO_CATEGORY_FEATURED_PRODUCTS';
+```
+
+* SHOW_PRODUCT_INFO_CATEGORY_SPECIALS_PRODUCTS
+> Show Special Products on Main Page - Category with SubCategories
+>
+> 3 (default)
+```
+mysql > delete from configuration where configuration_key = 'SHOW_PRODUCT_INFO_CATEGORY_SPECIALS_PRODUCTS';
+```
+
+* SHOW_PRODUCT_INFO_CATEGORY_UPCOMING
+> Show Upcoming Products on Main Page - Category with SubCategories
+>
+> 4 (default)
+```
+mysql > delete from configuration where configuration_key = 'SHOW_PRODUCT_INFO_CATEGORY_UPCOMING';
 ```
 
 ## Define Page Status (configuration_group_id = 25)
